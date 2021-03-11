@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args)
+{
+int a;
+System.out.println("1.hello\n2.good morning\n3.good afternoon\n4.good night");
+System.out.println("Select 1 option:");
+Scanner s=new Scanner(System.in);
+a=s.nextInt();
+switch(a)
+{
+case 1:
+System.out.println("Hello");
+break;
+case 2:
+System.out.println("good morning");
+break;
+case 3:
+System.out.println("good afternoon");
+break;
+case 4:
+System.out.println("good night");
+break;
+}
+}
+}
