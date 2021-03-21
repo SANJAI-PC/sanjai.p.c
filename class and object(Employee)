@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	Employee e1=new Employee();
+		Employee e2=new Employee();
+			Employee e3=new Employee();
+	e1.get();
+		e2.get();
+			e3.get();
+			System.out.println("name   year of joining   salary   address");
+	e1.display();
+		e2.display();
+			e3.display();
+	}
+}
+class Employee
+{
+    String name=new String();
+    String yoj=new String();
+    int sal;
+    String add=new String();
+    public void get()
+    {
+        System.out.println("Enter name, year of joining, address and salary: ");
+        Scanner s=new Scanner(System.in);
+    name=s.nextLine();
+       yoj=s.nextLine();
+       add=s.nextLine(); 
+       sal=s.nextInt();
+    }
+    public void display()
+    {
+        System.out.println(name+"   "+yoj+"       "+sal+"      "+add);
+    }
+}
